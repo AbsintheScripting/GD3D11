@@ -2557,9 +2557,10 @@ LRESULT GothicAPI::OnWindowMessage(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lP
 						Ocean->AddWaterPatchAt((unsigned int)((GetCameraPosition().x / OCEAN_PATCH_SIZE) + x), (unsigned int)((GetCameraPosition().z / OCEAN_PATCH_SIZE) + y));	
 			}
 			break;
+		*/
 		}
 		break;
-		*/
+		
 #ifdef BUILD_SPACER
 	case WM_SIZE:
 		// Reset resolution to windowsize
