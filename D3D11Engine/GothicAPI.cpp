@@ -2534,6 +2534,7 @@ LRESULT GothicAPI::OnWindowMessage(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lP
 #endif
 			break;
 
+		/* Numpads deactivated for multiplayer (GMPA)
 		case VK_NUMPAD1:
 			if (!Engine::AntTweakBar->GetActive())
 				SpawnVegetationBoxAt(GetCameraPosition());
@@ -2558,7 +2559,7 @@ LRESULT GothicAPI::OnWindowMessage(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lP
 			break;
 		}
 		break;
-
+		*/
 #ifdef BUILD_SPACER
 	case WM_SIZE:
 		// Reset resolution to windowsize
