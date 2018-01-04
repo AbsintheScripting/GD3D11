@@ -84,7 +84,8 @@ void HookedFunctionInfo::InitHooks()
 #ifdef BUILD_GOTHIC_2_6_fix
 	// Remove automatic volume change of sounds regarding whether the camera is indoor or outdoor
 	// TODO: Implement!
-	DetourFunction((BYTE *)GothicMemoryLocations::zCActiveSnd::AutoCalcObstruction, (BYTE *)HookedFunctionInfo::hooked_zCActiveSndAutoCalcObstruction);
+	// Deactived by Migos for GMP Compability
+	// DetourFunction((BYTE *)GothicMemoryLocations::zCActiveSnd::AutoCalcObstruction, (BYTE *)HookedFunctionInfo::hooked_zCActiveSndAutoCalcObstruction);
 #endif
 }
 

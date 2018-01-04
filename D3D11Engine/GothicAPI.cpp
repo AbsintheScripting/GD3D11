@@ -208,6 +208,8 @@ void GothicAPI::OnWorldUpdate() {
 		SetViewTransform(zCCamera::GetCamera()->GetTransform(zCCamera::ETransformType::TT_VIEW));
 	}
 
+	/* 
+	// Deactived by Migos for GMP Compability
 	// Apply the hints for the sound system to fix voices in indoor locations being quiet
 	// This was originally done in zCBspTree::Render 
 	if (IsCameraIndoor()) { 
@@ -225,6 +227,7 @@ void GothicAPI::OnWorldUpdate() {
 		if (oCGame::GetGame()->_zCSession_world && oCGame::GetGame()->_zCSession_world->GetSkyControllerOutdoor())
 			oCGame::GetGame()->_zCSession_world->GetSkyControllerOutdoor()->SetCameraLocationHint(0);
 	}
+	*/
 
 	// Fix the ice-texture if it is loaded, this is for the original game and only a quick fix
 	// TODO: Fix properly!
@@ -2534,7 +2537,8 @@ LRESULT GothicAPI::OnWindowMessage(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lP
 #endif
 			break;
 
-		/* Numpads deactivated for multiplayer (GMPA)
+		/* 
+		// Deactived by Migos for GMP Compability
 		case VK_NUMPAD1:
 			if (!Engine::AntTweakBar->GetActive())
 				SpawnVegetationBoxAt(GetCameraPosition());
